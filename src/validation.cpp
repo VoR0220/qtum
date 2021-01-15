@@ -3386,8 +3386,7 @@ bool CChainState::ConnectBlock(const CBlock& block, BlockValidationState& state,
                         dev::eth::bloom(resultExec[k].txRec.log()),
                         resultExec[k].execRes.excepted,
                         exceptedMessage(resultExec[k].execRes.excepted, resultExec[k].execRes.output),
-                        resultConvertQtumTX.first[k].getNVout()
-                    });
+                        resultConvertQtumTX.first[k].getNVout()});
                 }
 
                 pstorageresult->addResult(uintToh256(tx.GetHash()), tri);
